@@ -7,10 +7,14 @@
 
 struct User
 {
-    int user_id;
-    char user_name[20];
+    char username[20];
     char passwd[20];
 
+};
+
+struct Purchase{
+    char username[20];
+    int *correct_number;
 };
 
 #endif //NESOFT_DESIGEN_USER_H

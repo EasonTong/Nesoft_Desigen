@@ -3,4 +3,4 @@ project(Nesoft_Desigen)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Nesoft_Desigen main.cpp user/user.h Login_Register/Login_Register.cpp Login_Register/Login_Register.h Login_Register/test.cpp Util/Util.cpp Util/Util.h)
+add_executable(Nesoft_Desigen main.cpp user/user.h Login_Register/Login_Register.cpp Login_Register/Login_Register.h Login_Register/test.cpp util/util.cpp util/util.h Linklist/LinkList.cpp Linklist/LinkList.h)

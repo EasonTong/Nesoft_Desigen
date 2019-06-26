@@ -4,7 +4,9 @@
 #include <curses.h>
 
 #include "Login_Register/Login_Register.h"
-#include "Util/Util.h"
+#include "Util/util.h"
+#include "user/user.h"
+
 void sort(char **a)
 {
     char *temp;
@@ -24,12 +26,16 @@ void sort(char **a)
 
 int main() {
 
-
-//    welcome();
-
-//    select(a, "测试");
-
-
+    User u[2] = {{"qwer", "passwd1"},{"qwe2", "passwd2"}};
+//    User *u1 = Read_users_from_file();
+    Write_users_into_file(u, sizeof(u)/ sizeof(User));
+//    printf("%d", sizeof(u)/ sizeof(User));
+//    Write_users_into_file(u, s);
+//    char *menu_context[10] = {"功能一", "功能2", "功能3"};
+//
+//
+//    int a = select(menu_context, "test", 3);
+//    printf("%d", a);
     return 0;
 }
 
